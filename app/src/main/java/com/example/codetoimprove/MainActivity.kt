@@ -21,12 +21,14 @@ class MainActivity : AppCompatActivity() {
 
         var repository = myRepository(this)
 
+        viewModel = MyViewModel(repository)
+
         viewModel.data.observe(this) {
             binding.contentMain.response.text = it
-            fetchData()
+          //  fetchData()
         }
 
-        viewModel = MyViewModel(repository)
+
 
         fetchData()
 

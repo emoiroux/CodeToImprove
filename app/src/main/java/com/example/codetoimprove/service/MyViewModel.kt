@@ -22,7 +22,7 @@ class MyViewModel(mRepository: myRepository) : ViewModel() {
 
     fun refreshData() {
         viewModelScope.launch {
-            refreshData()
+           // refreshData()
         }
     }
 }

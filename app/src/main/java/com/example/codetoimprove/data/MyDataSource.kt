@@ -14,7 +14,7 @@ class myDataSource : BaseDataSource<String> {
         return if (random.nextBoolean()) {
             "Hello, world! ${Random().nextInt(99)}"
         } else {
-            null
+            "Hello, world!"
         }
     }
 }
